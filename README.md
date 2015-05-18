@@ -2,9 +2,9 @@
 
 ## Build folders and VCS
 
-At least three different, mutually exclusive approaches may be defined here. 
-Consequences of the suitable / unsuitable approach for your team are of critical importance
-as one approach can't be easily switched to another.
+On of the fundamental questions. There are at least three different, mutually exclusive approaches to this. 
+Consequences of the bad choice for your team may be critical
+because one approach can't be easily switched to another.
 
 ### Approaches
 
