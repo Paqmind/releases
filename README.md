@@ -22,17 +22,33 @@ Fetches and builds are performed as part of install / update process.
 
 <table>
 <tr>
-  <th>Negative Aspects</th><th><h4>Commit-bound</h4></th><th><h4>Release-bound</h4></th><th><h4>Unbound</h4></th>
+  <th>Negative Aspects</th>
+  <th><h4>Commit-bound</h4></th>
+  <th><h4>Release-bound</h4></th>
+  <th><h4>Unbound</h4></th>
 </tr>
 
 <tr>
-  <th>&nbsp;</th><th colspan="3">Development</th>
+  <th>&nbsp;</th>
+  <th colspan="3">Development</th>
 </tr>  
 <tr>
-  <td><code>$ git add -p</code> is complicated</td><td><strong>yes</strong></td><td>kinda</td><td>no</td>
+  <td><code>$ git add -p</code> is complicated</td>
+  <td><strong>yes</strong></td>
+  <td>kinda</td>
+  <td>no</td>
 </tr>  
+<tr>
+  <td>Conflicts in minimized files</td>
+  <td><strong>common</strong></td>
+  <td>possible</td>
+  <td>impossible</td>
+</tr>
 <tr>  
-  <td>Every member must have dev. tools installed</td><td>no</td><td>maybe</td><td><strong>yes</strong></td>
+  <td>All team members must install dev. tools</td>
+  <td>no</td>
+  <td>maybe</td>
+  <td><strong>yes</strong></td>
 </tr>  
 <tr>
   <td colspan="4"></td>
@@ -76,12 +92,6 @@ Fetches and builds are performed as part of install / update process.
   <td>Incompatible binaries</td>
   <td><strong>possible</strong></td>
   <td><strong>possible</strong></td>
-  <td>impossible</td>
-</tr>
-<tr>
-  <td>Conflicts in minimized files/td>
-  <td><strong>common</strong></td>
-  <td>possible</td>
   <td>impossible</td>
 </tr>
 <tr>
