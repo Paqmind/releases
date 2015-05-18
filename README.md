@@ -52,7 +52,20 @@ Fetches and builds are performed as part of install / update process.
 </tr>  
 <tr>
   <td colspan="4"></td>
-</tr>  
+</tr>
+
+<tr>
+  <th>&nbsp;</th><th colspan="3">History</th>
+</tr> 
+<tr>
+  <td>Bigger commits</td><td><strong>yes</strong></td><td>kinda</td><td>no</td>
+</tr>
+<tr>
+  <td>Bigger repo</td><td><strong>yes</strong></td><td><strong>yes</strong></td><td>no</td>
+</tr>
+<tr>
+  <td colspan="4"></td>
+</tr>
 
 <tr>
   <th>&nbsp;</th><th colspan="3">Deployment</th>
@@ -107,19 +120,6 @@ Fetches and builds are performed as part of install / update process.
 </tr>  
 <tr>
   <td>Are locked</td><td>no</td><td><strong>yes</strong></td><td>no</td>
-</tr>
-<tr>
-  <td colspan="4"></td>
-</tr>
-
-<tr>
-  <th>&nbsp;</th><th colspan="3">Machine</th>
-</tr> 
-<tr>
-  <td>Bigger commits</td><td><strong>yes</strong></td><td>kinda</td><td>no</td>
-</tr>
-<tr>
-  <td>Bigger repo</td><td><strong>yes</strong></td><td><strong>yes</strong></td><td>no</td>
 </tr>
 <tr>
   <td colspan="4"></td>
