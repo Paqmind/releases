@@ -1,28 +1,28 @@
 # Release questions
 
-## Build folders and VCS
+## Dist folders and VCS
 
 At least 3 well-defined approaches to this may be established. All have their own benefits
 and drawbacks and require entirely mutuall exclusive decisions in a lot of cases.
 So it's better to completely understand consequences of the choice for your team.
 
-### Options
+### Approaches
 
-#### Full
+#### Commit-bound
 Builds are under VCS.
 Every commit must include corresponding build changes (if there are).
 
-#### Partial 
+#### Release-bound
 Builds are under VCS.
 Every release must include corresponding build changes.
 
-#### Pure 
+#### Unbound 
 Builds are out of VCS.
 Fetches and builds are performed as part of install / update process.
 
 <table>
 <tr>
-  <th>Negative Aspects</th><th><h4>Full</h4></th><th><h4>Partial</h4></th><th><h4>Pure</h4></th>
+  <th>Negative Aspects</th><th><h4>Commit-bound</h4></th><th><h4>Release-bound</h4></th><th><h4>Unbound</h4></th>
 </tr>
 
 <tr>
@@ -136,3 +136,14 @@ Medium importance to both apps and libs.
 #### History
 Bigger history increases disk and traffic usage. Probably is more critical to apps
 considering their commit number is usually bigger in order(s) of magnitude.
+
+### Conclusion
+It's quite clear that the **Commit-bound** approach is the worst by the **Development** and **History** aspect groups.
+The **Unbound** approach has the opposite benefits and the worst **Deployment** metrics. The **Release-bound** sits somewhere in-between.
+
+So what's to choose when? At this moment we believe that **Unbound** approach is the best one for apps. 
+It makes development much easier in favor of complicated deployment, but this complication can be solved one time and used forever. It's very uncommon to run build step for libraries manually, so we use **Release-bound** approach for them.
+We never use **Commit-bound** due to it's super-large history and overcomplicated development, especially when dist includes 3-rd party libs (e.g. *always*).
+
+
+
