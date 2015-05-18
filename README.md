@@ -2,9 +2,9 @@
 
 ## Build folders and VCS
 
-At least 3 well-defined approaches to this may be established. All have their own benefits
-and drawbacks and require entirely mutuall exclusive decisions in a lot of cases.
-So it's better to completely understand consequences of the choice for your team.
+At least three different, mutually exclusive approaches may be defined here. 
+Consequences of the suitable / unsuitable approach for your team are of critical importance
+as one approach can't be easily switched to another.
 
 ### Approaches
 
