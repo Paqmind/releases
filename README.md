@@ -29,10 +29,10 @@ Fetches and builds are performed as part of install / update process.
   <th>&nbsp;</th><th colspan="3">Development</th>
 </tr>  
 <tr>
-  <td><code>$ git add -p</code> is complicated</td><td>yes (-)</td><td>kinda</td><td>no (+)</td>
+  <td><code>$ git add -p</code> is complicated</td><td><strong>yes</strong></td><td>kinda</td><td>no</td>
 </tr>  
 <tr>  
-  <td>Every member must have dev. tools installed</td><td>no (+)</td><td>maybe</td><td>yes (-)</td>
+  <td>Every member must have dev. tools installed</td><td>no</td><td>maybe</td><td><strong>yes</strong></td>
 </tr>  
 <tr>
   <td colspan="4"></td>
@@ -42,16 +42,16 @@ Fetches and builds are performed as part of install / update process.
   <th>&nbsp;</th><th colspan="3">Deployment</th>
 </tr>  
 <tr>
-  <td>Is complicated</td><td>no</td><td>no</td><td>yes</td>
+  <td>Is complicated</td><td>no</td><td>no</td><td><strong>yes</strong></td>
 </tr>  
 <tr>
-  <td>May break by network disconnect</td><td>no</td><td>no</td><td>yes</td>
+  <td>May break by network disconnect</td><td>no</td><td>no</td><td><strong>yes</strong></td>
 </tr>  
 <tr>
-  <td>May break by dep. repo removal</td><td>no</td><td>no</td><td>yes</td>
+  <td>May break by dep. repo removal</td><td>no</td><td>no</td><td><strong>yes</strong></td>
 </tr>  
 <tr>
-  <td>Slowed down</td><td>no</td><td>no</td><td>yes</td>
+  <td>Is slow</td><td>no</td><td>no</td><td><strong>yes</strong></td>
 </tr>  
 <tr>
   <td colspan="4"></td>
@@ -62,7 +62,7 @@ Fetches and builds are performed as part of install / update process.
 </tr>  
 <tr>
   <td>Sources and dists are unsynced</td>
-  <td>high probability</td>
+  <td><strong>high probability</strong></td>
   <td>low probability</td>
   <td>zero probability</td>
 </tr>
@@ -70,17 +70,17 @@ Fetches and builds are performed as part of install / update process.
   <td>Untested dependency</td>
   <td>impossible</td>
   <td>possible in staging</td>
-  <td>possible in production</td>
+  <td><strong>possible in production</strong> (*)</td>
 </tr>
 <tr>
   <td>Incompatible binaries</td>
-  <td>possible</td>
-  <td>possible</td>
-  <td>impossible (+)</td>
+  <td><strong>possible</strong></td>
+  <td><strong>possible</strong></td>
+  <td>impossible</td>
 </tr>
 <tr>
   <td>Conflicts in minimized files/td>
-  <td>common</td>
+  <td><strong>common</strong></td>
   <td>possible</td>
   <td>impossible</td>
 </tr>
@@ -92,7 +92,7 @@ Fetches and builds are performed as part of install / update process.
   <th>&nbsp;</th><th colspan="3">Tags / versions</th>
 </tr>  
 <tr>
-  <td>Are locked</td><td>no</td><td>yes</td><td>no</td>
+  <td>Are locked</td><td>no</td><td><strong>yes</strong></td><td>no</td>
 </tr>
 <tr>
   <td colspan="4"></td>
@@ -102,10 +102,10 @@ Fetches and builds are performed as part of install / update process.
   <th>&nbsp;</th><th colspan="3">History</th>
 </tr> 
 <tr>
-  <td>Big commits</td><td>yes</td><td>yes</td><td>no (+)</td>
+  <td>Bigger commits</td><td><strong>yes</strong></td><td>kinda</td><td>no</td>
 </tr>
 <tr>
-  <td>Big repo</td><td>yes</td><td>yes</td><td>no (+)</td>
+  <td>Bigger repo</td><td><strong>yes</strong></td><td><strong>yes</strong></td><td>no</td>
 </tr>
 <tr>
   <td colspan="4"></td>
