@@ -1,6 +1,6 @@
 # Release questions
 
-## Dist folders and VCS
+## Build folders and VCS
 
 At least 3 well-defined approaches to this may be established. All have their own benefits
 and drawbacks and require entirely mutuall exclusive decisions in a lot of cases.
@@ -87,7 +87,7 @@ Fetches and builds are performed as part of install / update process.
   <td><strong>possible in production</strong> (*)</td>
 </tr>
 <tr>
-  <td>Sources and dists are unsynced</td>
+  <td>Sources and builds are unsynced</td>
   <td><strong>high probability</strong></td>
   <td>low probability</td>
   <td>zero probability</td>
@@ -142,7 +142,7 @@ So what's to choose when? At this moment we believe that **Unbound** approach is
 It makes development much easier in favor of complicated deployment, but this complication can be solved once and used forever. Tinier history is also more critical to apps, as their commit number is usually bigger in order(s) of magnitude.
 
 It's very uncommon to run build step for libraries manually, so we use **Release-bound** approach for them.
-We never use **Commit-bound** due to it's super-large history and overcomplicated development, especially when dist includes 3-rd party libs (e.g. *always*).
+We never use **Commit-bound** due to it's super-large history and overcomplicated development, especially when `build` includes 3-rd party libs (e.g. *always*).
 
 
 
