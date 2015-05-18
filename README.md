@@ -33,7 +33,7 @@ Fetches and builds are performed as part of install / update process.
   <th colspan="3">Development</th>
 </tr>  
 <tr>
-  <td><code>$ git add -p</code> is complicated</td>
+  <td>Diffs are huge / messy</td>
   <td><strong>yes</strong></td>
   <td>kinda</td>
   <td>no</td>
@@ -58,35 +58,39 @@ Fetches and builds are performed as part of install / update process.
   <th>&nbsp;</th><th colspan="3">Deployment</th>
 </tr>  
 <tr>
-  <td>Is complicated</td><td>no</td><td>no</td><td><strong>yes</strong></td>
+  <td>Is complicated</td>
+  <td>no</td>
+  <td>no</td>
+  <td><strong>yes</strong></td>
 </tr>  
 <tr>
-  <td>May break by network disconnect</td><td>no</td><td>no</td><td><strong>yes</strong></td>
+  <td>May break by network disconnect</td>
+  <td>no</td>
+  <td>no</td>
+  <td><strong>yes</strong></td>
 </tr>  
 <tr>
-  <td>May break by dep. repo removal</td><td>no</td><td>no</td><td><strong>yes</strong></td>
+  <td>May break by dep. repo removal</td>
+  <td>no</td><td>no</td>
+  <td><strong>yes</strong></td>
 </tr>  
 <tr>
-  <td>Is slow</td><td>no</td><td>no</td><td><strong>yes</strong></td>
+  <td>Is slow</td>
+  <td>no</td>
+  <td>no</td>
+  <td><strong>yes</strong></td>
 </tr>  
-<tr>
-  <td colspan="4"></td>
-</tr>  
-
-<tr>
-  <th>&nbsp;</th><th colspan="3">Commits</th>
-</tr>  
-<tr>
-  <td>Sources and dists are unsynced</td>
-  <td><strong>high probability</strong></td>
-  <td>low probability</td>
-  <td>zero probability</td>
-</tr>
 <tr>
   <td>Untested dependency</td>
   <td>impossible</td>
   <td>possible in staging</td>
   <td><strong>possible in production</strong> (*)</td>
+</tr>
+<tr>
+  <td>Sources and dists are unsynced</td>
+  <td><strong>high probability</strong></td>
+  <td>low probability</td>
+  <td>zero probability</td>
 </tr>
 <tr>
   <td>Incompatible binaries</td>
@@ -96,7 +100,7 @@ Fetches and builds are performed as part of install / update process.
 </tr>
 <tr>
   <td colspan="4"></td>
-</tr>
+</tr>  
 
 <tr>
   <th>&nbsp;</th><th colspan="3">Tags / versions</th>
@@ -109,7 +113,7 @@ Fetches and builds are performed as part of install / update process.
 </tr>
 
 <tr>
-  <th>&nbsp;</th><th colspan="3">History</th>
+  <th>&nbsp;</th><th colspan="3">Machine</th>
 </tr> 
 <tr>
   <td>Bigger commits</td><td><strong>yes</strong></td><td>kinda</td><td>no</td>
@@ -143,7 +147,7 @@ But even this don't give 100% guarantee when deps include binary stuff.
 #### Tags / versions
 Medium importance to both apps and libs.
 
-#### History
+#### Machine
 Bigger history increases disk and traffic usage. Probably is more critical to apps
 considering their commit number is usually bigger in order(s) of magnitude.
 
