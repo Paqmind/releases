@@ -126,37 +126,22 @@ Fetches and builds are performed as part of install / update process.
 </tr>
 </table>
 
-### Aspects
-
-All projects may be roughly divided into apps and libs.
-
-#### Development
-Critical to both apps and libs.
-
-#### Deployment
-Critical to apps. Agnostic to libs.
-
-#### Commits
-Cricital to both apps and libs. Broken commits may cause multiple problems.
 (*) – unsyncs between tested and installed dependency version may be
 prevented to some degree by strict version pinning. Question about deps of deps remains.
 Solution to is called "shrinkwrapping". Refer to corresponding tool suppport:
 [Bower](https://github.com/bower/bower/pull/1592), [NPM](https://docs.npmjs.com/cli/shrinkwrap)
 But even this don't give 100% guarantee when deps include binary stuff.
 
-#### Tags / versions
-Medium importance to both apps and libs.
-
-#### Machine
-Bigger history increases disk and traffic usage. Probably is more critical to apps
-considering their commit number is usually bigger in order(s) of magnitude.
-
 ### Conclusion
+All projects may be roughly divided into apps and libs.
+
 It's quite clear that the **Commit-bound** approach is the worst by the **Development** and **History** aspect groups.
 The **Unbound** approach has the opposite benefits and the worst **Deployment** metrics. The **Release-bound** sits somewhere in-between.
 
 So what's to choose when? At this moment we believe that **Unbound** approach is the best one for apps. 
-It makes development much easier in favor of complicated deployment, but this complication can be solved one time and used forever. It's very uncommon to run build step for libraries manually, so we use **Release-bound** approach for them.
+It makes development much easier in favor of complicated deployment, but this complication can be solved once and used forever. Tinier history is also more critical to apps, as their commit number is usually bigger in order(s) of magnitude.
+
+It's very uncommon to run build step for libraries manually, so we use **Release-bound** approach for them.
 We never use **Commit-bound** due to it's super-large history and overcomplicated development, especially when dist includes 3-rd party libs (e.g. *always*).
 
 
