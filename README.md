@@ -50,6 +50,12 @@ Fetches and builds are performed as part of install / update process.
   <td>maybe</td>
   <td><strong>yes</strong></td>
 </tr>  
+<tr>  
+  <td>Minified dists unavailable</td>
+  <td>no</td>
+  <td>no</td>
+  <td><strong>yes</strong></td>
+</tr>
 <tr>
   <td colspan="4"></td>
 </tr>
@@ -131,6 +137,11 @@ prevented to some degree by strict version pinning. Question about deps of deps 
 Solution to is called "shrinkwrapping". Refer to corresponding tool suppport:
 [Bower](https://github.com/bower/bower/pull/1592), [NPM](https://docs.npmjs.com/cli/shrinkwrap)
 But even this don't give 100% guarantee when deps include binary stuff.
+
+#### Minified builds unavailable
+
+This blocks the possibility to reuse released minified library snapshot in your own builds
+Your build tool will parse the whole library each time (except incremental builds) getting build time increased.
 
 ### Conclusion
 All projects may be roughly divided into apps and libs.
