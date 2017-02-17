@@ -155,5 +155,7 @@ It makes development much easier in favor of complicated deployment, but this co
 It's very uncommon to run build step for libraries manually, so we use **Release-bound** approach for them.
 We never use **Commit-bound** due to it's super-large history and overcomplicated development, especially when `build` includes 3-rd party libs (e.g. *always*).
 
+## Links
 
+http://blog.ezyang.com/2014/08/the-fundamental-problem-of-programming-language-package-management/
 
